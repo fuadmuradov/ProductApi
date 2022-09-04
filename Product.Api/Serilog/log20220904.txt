@@ -1,0 +1,23 @@
+2022-09-04 13:29:30.898 +04:00 [INF] User profile is available. Using 'C:\Users\fuadm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-04 13:29:32.062 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-04 13:29:32.063 +04:00 [INF] Hosting environment: Development
+2022-09-04 13:29:32.063 +04:00 [INF] Content root path: D:\PashaLife\Product\Product.Api
+2022-09-04 13:29:32.162 +04:00 [INF] Request starting HTTP/2.0 GET https://localhost:44353/weatherforecast  
+2022-09-04 13:29:32.236 +04:00 [INF] Executing endpoint 'Product.Api.Controllers.WeatherForecastController.Get (Product.Api)'
+2022-09-04 13:29:32.296 +04:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Product.Api.WeatherForecast] Get() on controller Product.Api.Controllers.WeatherForecastController (Product.Api).
+2022-09-04 13:29:32.305 +04:00 [INF] Executing ObjectResult, writing value of type 'Product.Api.WeatherForecast[]'.
+2022-09-04 13:29:32.789 +04:00 [INF] Executed action Product.Api.Controllers.WeatherForecastController.Get (Product.Api) in 472.6585ms
+2022-09-04 13:29:32.794 +04:00 [INF] Executed endpoint 'Product.Api.Controllers.WeatherForecastController.Get (Product.Api)'
+2022-09-04 13:29:32.798 +04:00 [INF] Request finished in 641.1179ms 200 application/json; charset=utf-8
+2022-09-04 13:30:37.824 +04:00 [INF] Request starting HTTP/2.0 GET https://localhost:44353/api/category  
+2022-09-04 13:30:37.827 +04:00 [INF] Executing endpoint 'Product.Api.Controllers.CategoryController.Get (Product.Api)'
+2022-09-04 13:30:37.844 +04:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Product.Api.Controllers.CategoryController (Product.Api).
+2022-09-04 13:30:40.253 +04:00 [INF] Entity Framework Core 3.1.28 initialized 'ProductContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-09-04 13:30:42.048 +04:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductCategoryId], [p].[ProductCategoryName]
+FROM [ProductCategories] AS [p]
+WHERE [p].[ProductCategoryId] > 0
+2022-09-04 13:30:42.222 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Product.Service.DTOs.ProductCategoryDto.ProductCategoryGetDto, Product.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-04 13:30:42.236 +04:00 [INF] Executed action Product.Api.Controllers.CategoryController.Get (Product.Api) in 4391.9733ms
+2022-09-04 13:30:42.236 +04:00 [INF] Executed endpoint 'Product.Api.Controllers.CategoryController.Get (Product.Api)'
+2022-09-04 13:30:42.243 +04:00 [INF] Request finished in 4419.3835ms 200 application/json; charset=utf-8
